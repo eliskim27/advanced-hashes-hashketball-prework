@@ -158,7 +158,7 @@ def player_stats(name)
       p_stats_hash = get_all_players[index]
     end
   end
-  p_stats_hash
+  p_stats_hash.delete()
 end
 
 
