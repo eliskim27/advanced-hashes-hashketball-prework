@@ -139,9 +139,16 @@ def team_names
   team_array
 end
   
-def player_numbers(team_name)
-  game_hash.each do |hom
-  
+def player_numbers(team)
+  p_numbers_array = []
+  game_hash.each do |homeaway, teamstats|
+    if game_hash[homeaway][:team_name] == team
+      game_hash[homeaway][:players].each do |player|
+        p_numbers_array << player[:number]
+      end
+    end
+  end
+  p_numbers_array
 end
 
 
