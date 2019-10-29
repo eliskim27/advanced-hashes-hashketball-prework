@@ -131,7 +131,7 @@ def team_colors(team)
   end
 end
 
-def team_names(game_hash)
+def team_names
   team_array = []
   game_hash.each do |homeaway, teamstats|
     team_array << teamstats[:team_name]
