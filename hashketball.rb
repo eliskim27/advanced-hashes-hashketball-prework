@@ -158,7 +158,8 @@ def player_stats(name)
       p_stats_hash = get_all_players[index]
     end
   end
-  p_stats_hash.delete()
+  p_stats_hash.delete(:player_name)
+  p_stats_hash
 end
 
 
