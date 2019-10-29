@@ -134,7 +134,7 @@ end
 def team_names(game_hash)
   team_array = []
   game_hash.each do |homeaway, teamstats|
-    team_array << game_hash[homeaway][:team]
+    team_array << game_hash[homeaway][:team_name]
   end
   team_array
 end
