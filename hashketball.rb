@@ -119,7 +119,9 @@ def num_points_scored(player_name)
   get_player_by_name(player_name)[:points]
 end
 
-
+def shoe_size(player_name)
+  get_player_by_name(player_name)[:shoe]
+end
 
 # def num_points_scored(sought_player_name)
 #   game_hash.each do |_place, team|
