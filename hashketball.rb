@@ -123,29 +123,18 @@ def shoe_size(player_name)
   get_player_by_name(player_name)[:shoe]
 end
 
-# def num_points_scored(sought_player_name)
-#   game_hash.each do |_place, team|
-#     team.each do |attribute, data|
-#       next unless attribute == :players
+def team_colors(team)
+  game_hash.each do |homeaway, teamstats|
+    if game_hash[homeaway][:team_name] == team
+      return game_hash[homeaway][:colors]
+    end
+  end
+end
 
-#       data.each do |player|
-#         return player[:points] if player[:player_name] == sought_player_name
-#       end
-#     end
-#   end
-# end
 
-# def shoe_size(sought_player_name)
-#   game_hash.each do |_place, team|
-#     team.each do |attribute, data|
-#       next unless attribute == :players
 
-#       data.each do |player|
-#         return player[:shoe] if player[:player_name] == sought_player_name
-#       end
-#     end
-#   end
-# end
+
+
 
 # def team_colors(team_name)
 #   game_hash.each do |place, team|
