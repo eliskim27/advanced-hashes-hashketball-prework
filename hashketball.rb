@@ -104,7 +104,7 @@ end
 
 def get_all_players                             #helper method
   all_players = []
-  all_players << game_hash[:home][:players] # returns an arrat
+  all_players << game_hash[:home][:players] # returns an array of hashes
   all_players << game_hash[:away][:players]
   flattened_players = all_players.flatten
 end
@@ -152,7 +152,10 @@ def player_numbers(team)
 end
 
 def player_stats(name)
-  
+  p_stats_hash = {}
+  get_all_players.each_with_index do |player|  #get_all_players returns an array of hashes
+    if get_all_players[:player_name] == name
+      p_stats_hash = 
 end
 
 
