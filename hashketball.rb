@@ -153,9 +153,12 @@ end
 
 def player_stats(name)
   p_stats_hash = {}
-  get_all_players.each_with_index do |player|  #get_all_players returns an array of hashes
+  get_all_players.each_with_index do |player,index|  #array of hashes
     if get_all_players[:player_name] == name
-      p_stats_hash = 
+      p_stats_hash = get_all_players[index]
+    end
+  end
+  p_stats_hash
 end
 
 
