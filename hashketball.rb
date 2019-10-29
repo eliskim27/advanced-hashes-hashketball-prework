@@ -139,28 +139,13 @@ def team_names
   team_array
 end
   
-#   game_hash.each do |homeaway, teamstats|
-#     if game_hash[homeaway][:team_name] == team
-#       return game_hash[homeaway][:colors]
-#     end
-#   end
-# end
+def player_numbers
+  
+end
 
 
 
 
-
-# def team_colors(team_name)
-#   game_hash.each do |place, team|
-#     return game_hash[place][:colors] if team[:team_name] == team_name
-#   end
-# end
-
-# def team_names
-#   game_hash.collect do |_place, team|
-#     team[:team_name]
-#   end
-# end
 
 # def player_numbers(team_name)
 #   nums = []
