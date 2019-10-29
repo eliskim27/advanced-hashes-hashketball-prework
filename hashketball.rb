@@ -151,25 +151,12 @@ def player_numbers(team)
   p_numbers_array
 end
 
+def player_stats(name)
+  
+end
 
 
 
-
-# def player_numbers(team_name)
-#   nums = []
-#   game_hash.each do |_place, team|
-#     next unless team[:team_name] == team_name
-
-#     team.each do |attribute, data|
-#       next unless attribute == :players
-
-#       data.each do |data|
-#         nums << data[:number]
-#       end
-#     end
-#   end
-#   nums
-# end
 
 # def player_stats(sought_player_name)
 #   new_hash = {}
